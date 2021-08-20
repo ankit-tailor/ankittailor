@@ -1,5 +1,15 @@
 import React from "react"
+import Intro from "../components/intro/Intro"
+import Layout from "../components/layout/Layout"
+import Skills from "../components/skills/Skills"
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Home = () => {
+  return (
+    <Layout>
+      <Intro />
+      <Skills />
+    </Layout>
+  )
 }
+
+export default Home
