@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: rgba(0, 195, 255);
+}
+
+::selection {
+  color: #fff;
+  background: rgba(0, 195, 255);
+}
+
+.transform-scale:hover {
+  transform: scale(1.03);
+}
