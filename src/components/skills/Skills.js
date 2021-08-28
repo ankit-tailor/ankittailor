@@ -17,27 +17,27 @@ const Skills = () => {
           <h1 className="text-center font-bold text-2xl">Skills</h1>
           <div className="text-center md:justify-center md:content-center my-10">
             <FontAwesomeIcon
-              className="text-6xl sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
+              className="text-6xl transform-scale sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
               icon={faHtml5}
             />
             <FontAwesomeIcon
-              className="text-6xl sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
+              className="text-6xl transform-scale sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
               icon={faCss3Alt}
             />
             <FontAwesomeIcon
-              className="text-6xl sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
+              className="text-6xl transform-scale sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
               icon={faJs}
             />
             <FontAwesomeIcon
-              className="text-6xl sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
+              className="text-6xl transform-scale sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
               icon={faReact}
             />
             <FontAwesomeIcon
-              className="text-6xl sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
+              className="text-6xl transform-scale sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
               icon={faNpm}
             />
             <FontAwesomeIcon
-              className="text-6xl sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
+              className="text-6xl transform-scale sm:text-6xl md:text-8xl mx-8 cursor-pointer sm:mx-10 my-8 font-medium"
               icon={faNodeJs}
             />
           </div>
