@@ -29,7 +29,7 @@ const Home = () => {
       <div className="text-dark dark:text-white bg-white dark:bg-dark">
         <div className="sm:container sm:mx-auto">
           <div className="p-2">
-            <h1 className="text-center font-bold text-2xl">Recent Blogs</h1>
+            <h1 className="text-center font-bold my-10 text-2xl">Recent Blogs</h1>
             <div className="gap-3 grid place-items-center lg:grid-cols-2 md:grid-cols-1">
               <Blog />
               <Blog />
