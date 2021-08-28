@@ -7,9 +7,9 @@ import Typography from '@material-ui/core/Typography';
 
 function Project() {
     return (
-        <Card className="py-8 bg-white cursor-pointer transform-scale dark:bg-dark text-dark dark:text-white md:w-full w-full">
+        <Card className="py-8 shadow-2xl bg-white cursor-pointer dark:bg-dark text-dark dark:text-white md:w-full w-full">
             <CardMedia
-                className="h-48"
+                className="h-48 transform-scale ease-in"
                 component="img"
                 alt="Contemplative Reptile"
                 height="50"
