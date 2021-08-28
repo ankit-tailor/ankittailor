@@ -8,8 +8,6 @@ export default ({ children }) => {
   const [theme, toggleTheme] = useDarkMode()
 
   useEffect(() => {
-    if (isBrowser && !window.localStorage.theme)
-      window.localStorage.theme = theme;
     if (
       (isBrowser && window.localStorage.theme === "dark") ||
       (!("theme" in localStorage) &&
@@ -19,6 +17,8 @@ export default ({ children }) => {
     } else {
       document.documentElement.classList.remove("dark")
     }
+    if (isBrowser && !window.localStorage.theme)
+      window.localStorage.theme = theme;
   }, [toggleTheme])
 
   return (
