@@ -1,12 +1,12 @@
 import { Link } from "gatsby"
 import React from "react"
 import {
-  faFacebookF,
   faTwitter,
   faLinkedinIn,
   faInstagram,
   faGithub,
   faNode,
+  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -33,31 +33,31 @@ const Footer = () => {
               </h1>
               <Link
                 to="/"
-                className="my-1 block text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
               >
                 Home
               </Link>
               <Link
                 to="/projects"
-                className="my-1 block text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
               >
                 Projects
               </Link>
               <Link
                 to="/blogs"
-                className="my-1 block text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
               >
                 Blogs
               </Link>
               <Link
                 to="/about"
-                className="my-1 block text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
               >
                 About
               </Link>
               <Link
                 to="/contact"
-                className="my-1 block text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
               >
                 Contact
               </Link>
@@ -70,34 +70,34 @@ const Footer = () => {
               {/* <div className="grid grid-cols-3 gap-3"> */}
               <ul>
                 <li>
-                  <FontAwesomeIcon
+                  <a href="https://stackoverflow.com/users/11812542/ankit-tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
                     className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                    icon={faFacebookF}
-                  />
-                  <FontAwesomeIcon
+                    icon={faStackOverflow}
+                  /> </a>
+                  <a href="https://twitter.com/ankit__tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
                     className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faTwitter}
-                  />
-                  <FontAwesomeIcon
+                  /></a>
+                  <a href="https://ankit-tailor.hashnode.dev" target="_blank" rel="noreferrer"> <FontAwesomeIcon
                     className="text-xl hover:text-2xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faNode}
-                  />
+                  /></a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <FontAwesomeIcon
+                  <a href="https://github.com/ankit-tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
                     className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faGithub}
-                  />
-                  <FontAwesomeIcon
+                  /></a>
+                  <a href="https://instagram.com/_akkiiii._" target="_blank" rel="noreferrer">   <FontAwesomeIcon
                     className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faInstagram}
-                  />
-                  <FontAwesomeIcon
+                  /></a>
+                  <a href="https://linkedin.com/in/ankit-tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
                     className="text-xl hover:text-indigo cursor-pointer transform-scale mx-2 my-2 font-medium"
                     icon={faLinkedinIn}
-                  />
+                  /></a>
                 </li>
               </ul>
             </div>
@@ -107,10 +107,10 @@ const Footer = () => {
         <hr className="bg-white dark:bg-dark mx-1 my-3" />
         <div className="grid grid-cols-1 md:grid-cols-2 text-center">
           <p className="mx-3 my-3">
-            Copyright &copy; {new Date().getFullYear()} Ankit Tailor
+            Copyright &copy; {new Date().getFullYear()} <Link to="/"> <span className="text-indigo"> Ankit Tailor</span></Link>
           </p>
           <p className="mx-3 my-3">
-            Built with <span role="img" aria-label="heart"> ❤️</span> & Open sourced on <FontAwesomeIcon icon={faGithub} />
+            Built with <span className="cursor-pointer" role="img" aria-label="heart"> ❤️</span> & Open sourced on <a href="https://github.com/ankit-tailor/ankittailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="hover:text-indigo" icon={faGithub} /> </a>
           </p>
         </div>
       </footer>
