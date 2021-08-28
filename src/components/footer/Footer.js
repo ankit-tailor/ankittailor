@@ -18,11 +18,10 @@ const Footer = () => {
         <hr className="text-dark dark:text-white bg-white dark:bg-dark mx-1 my-3" />
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="my-4">
-            ABOUT{" "}
+            About
             <Link className="text-indigo underline mx-1" to="/">
-              {" "}
-              ankittailor.me{" "}
-            </Link>{" "}
+              ankittailor.me
+            </Link>
             is the space where I share all my content related to software
             development. I am always open for interesting questions &
             collaborations & also you can share some memes on instagram. 😃
