@@ -28,7 +28,7 @@ const About = () => {
                             </Typography>
                             <br />
                             <p className="text-xl">
-                                Currently I work with <span className="text-indigo"> ReactJS </span>+<span className="text-indigo"> NestJS</span>.
+                                Currently I work with <span className="font-bold text-indigo"> ReactJS </span>+<span className="font-bold text-indigo"> NestJS</span>.
                             </p>
                             <p className="text-xl">
                                 <span role="img" aria-label="search">🔎</span> I've experience with:
