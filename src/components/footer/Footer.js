@@ -15,6 +15,7 @@ const Footer = () => {
     <>
       <footer className="px-6 py-6 bg-white dark:bg-dark text-dark dark:text-white">
         {/* <div className="rounded-lg bg-blue py-10 px-6 text-white"> */}
+        <hr className="text-dark dark:text-white bg-white dark:bg-dark mx-1 my-3" />
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="my-4">
             ABOUT{" "}
@@ -71,15 +72,15 @@ const Footer = () => {
               <ul>
                 <li>
                   <FontAwesomeIcon
-                    className="text-xl mx-2 my-2 font-medium"
+                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faFacebookF}
                   />
                   <FontAwesomeIcon
-                    className="text-xl mx-2 my-2 font-medium"
+                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faTwitter}
                   />
                   <FontAwesomeIcon
-                    className="text-xl mx-2 my-2 font-medium"
+                    className="text-xl hover:text-2xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faNode}
                   />
                 </li>
@@ -87,15 +88,15 @@ const Footer = () => {
               <ul>
                 <li>
                   <FontAwesomeIcon
-                    className="text-xl mx-2 my-2 font-medium"
+                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faGithub}
                   />
                   <FontAwesomeIcon
-                    className="text-xl mx-2 my-2 font-medium"
+                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
                     icon={faInstagram}
                   />
                   <FontAwesomeIcon
-                    className="text-xl mx-2 my-2 font-medium"
+                    className="text-xl hover:text-indigo cursor-pointer transform-scale mx-2 my-2 font-medium"
                     icon={faLinkedinIn}
                   />
                 </li>
@@ -110,7 +111,7 @@ const Footer = () => {
             Copyright &copy; {new Date().getFullYear()} Ankit Tailor
           </p>
           <p className="mx-3 my-3">
-            Built with ❤️ & Open sourced on <FontAwesomeIcon icon={faGithub} />
+            Built with <span role="img" aria-label="heart"> ❤️</span> & Open sourced on <FontAwesomeIcon icon={faGithub} />
           </p>
         </div>
       </footer>
