@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-function Project() {
+function Project({ name, github, liveProject, techstack }) {
     return (
         <Card className="py-8 shadow-2xl bg-white cursor-pointer dark:bg-dark text-dark dark:text-white md:w-full w-full">
             <CardMedia
@@ -18,19 +18,18 @@ function Project() {
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                    Lizard
+                    {name}
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica
+                    {techstack}
                 </Typography>
             </CardContent>
             <CardActions>
                 <button size="small" className="transform-scale" style={{ color: "rgba(0, 195, 255)", fontSize: "0.9rem" }}>
-                    Live Project
+                    <a href={liveProject} target="_blank" rel="noreferrer">  Live Project </a>
                 </button>
                 <button size="small" className="transform-scale" style={{ color: "rgba(0, 195, 255)", fontSize: "0.9rem" }}>
-                    Source Code
+                    <a href={github} target="_blank" rel="noreferrer">  Source Code</a>
                 </button>
             </CardActions>
         </Card>
