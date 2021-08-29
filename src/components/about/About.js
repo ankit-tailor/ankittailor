@@ -1,8 +1,22 @@
 import React from 'react'
-import meProfile from "../../../static/profile.jpeg"
 import Typography from '@material-ui/core/Typography';
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from "gatsby-image";
 
 const About = () => {
+
+    const profileImage = useStaticQuery(graphql`
+        query ImageQuery {
+            file(relativePath: { eq: "profile.jpeg" }) {
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
+
     return (
         <div className="dark:bg-dark bg-white text-dark dark:text-white">
             <div className="sm:container py-4 sm:mx-auto">
@@ -12,7 +26,7 @@ const About = () => {
                     </h1>
                     <br />
                     <div className="lg:flex justify-between">
-                        <img src={meProfile} alt="profile_photo" className="cursor-pointer transform-scale shadow-2xl block mx-auto rounded-lg w-3/4 sm:w-2/4 h-3/4 sm:h-2/4 lg:w-1/4 lg:h-2/4 lg:mx-6 my-6" />
+                        <Img fluid={profileImage.file.childImageSharp.fluid} alt="profile_photo" className="cursor-pointer transform-scale shadow-2xl block mx-auto rounded-lg w-3/4 sm:w-2/4 h-3/4 sm:h-2/4 lg:w-1/4 lg:h-3/4 lg:mx-6 my-6" />
                         <div>
                             <p className="text-xl">
                                 I'm Ankit Tailor,<span className="text-indigo"> Frontend Engineer </span>from <span className="text-indigo"> Gujarat, India. </span>
