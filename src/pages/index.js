@@ -1,3 +1,4 @@
+import { graphql } from "gatsby"
 import React from "react"
 import Blog from "../components/blogs/Blog"
 import Intro from "../components/intro/Intro"
@@ -5,7 +6,11 @@ import Layout from "../components/layout/Layout"
 import Project from "../components/projects/Project"
 import Skills from "../components/skills/Skills"
 
-const Home = () => {
+const Home = ({ data }) => {
+
+  const allProjects = data.projects.nodes;
+  // console.log(allProjects, data)
+
   return (
     <Layout>
       <Intro />
@@ -47,3 +52,22 @@ const Home = () => {
 }
 
 export default Home
+
+export const query = graphql`
+query MyQuery {
+  projects: allMarkdownRemark {
+    nodes {
+      frontmatter {
+        github
+        liveProject
+        name
+        slug
+        techstack
+        title
+      }
+      id
+    }
+  }
+}
+
+`
