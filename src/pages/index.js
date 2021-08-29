@@ -20,13 +20,14 @@ const Home = ({ data }) => {
           <div className="p-6">
             <h1 className="text-center font-bold text-2xl">Recent Projects</h1>
             <div className="gap-5 my-6 grid place-items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-              {allProjects.map(({ frontmatter: { name, techstack, github, liveProject }, id }) => (
+              {allProjects.map(({ frontmatter: { name, techstack, github, liveProject, thumbnail }, id }) => (
                 <Project
                   key={id}
                   name={name}
                   liveProject={liveProject}
                   techstack={techstack}
                   github={github}
+                  fluid={thumbnail.childImageSharp.fluid}
                 />
               ))}
             </div>
@@ -69,6 +70,13 @@ query ProjectQuery {
         slug
         techstack
         title
+        thumbnail {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       id
     }
