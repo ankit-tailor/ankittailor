@@ -70,34 +70,76 @@ const Footer = () => {
               {/* <div className="grid grid-cols-3 gap-3"> */}
               <ul>
                 <li>
-                  <a href="https://stackoverflow.com/users/11812542/ankit-tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
-                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                    icon={faStackOverflow}
-                  /> </a>
-                  <a href="https://twitter.com/ankit__tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
-                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                    icon={faTwitter}
-                  /></a>
-                  <a href="https://ankit-tailor.hashnode.dev" target="_blank" rel="noreferrer"> <FontAwesomeIcon
-                    className="text-xl hover:text-2xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                    icon={faNode}
-                  /></a>
+                  <a
+                    href="https://stackoverflow.com/users/11812542/ankit-tailor"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
+                      icon={faStackOverflow}
+                    />{" "}
+                  </a>
+                  <a
+                    href="https://twitter.com/ankit__tailor"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
+                      icon={faTwitter}
+                    />
+                  </a>
+                  <a
+                    href="https://ankit-tailor.hashnode.dev"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      className="text-xl hover:text-2xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
+                      icon={faNode}
+                    />
+                  </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://github.com/ankit-tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
-                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                    icon={faGithub}
-                  /></a>
-                  <a href="https://instagram.com/_akkiiii._" target="_blank" rel="noreferrer">   <FontAwesomeIcon
-                    className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                    icon={faInstagram}
-                  /></a>
-                  <a href="https://linkedin.com/in/ankit-tailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon
-                    className="text-xl hover:text-indigo cursor-pointer transform-scale mx-2 my-2 font-medium"
-                    icon={faLinkedinIn}
-                  /></a>
+                  <a
+                    href="https://github.com/ankit-tailor"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
+                      icon={faGithub}
+                    />
+                  </a>
+                  <a
+                    href="https://instagram.com/_akkiiii._"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
+                      icon={faInstagram}
+                    />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/ankit-tailor"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      className="text-xl hover:text-indigo cursor-pointer transform-scale mx-2 my-2 font-medium"
+                      icon={faLinkedinIn}
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -107,10 +149,30 @@ const Footer = () => {
         <hr className="bg-white dark:bg-dark mx-1 my-3" />
         <div className="grid grid-cols-1 md:grid-cols-2 text-center">
           <p className="mx-3 my-3">
-            Copyright &copy; {new Date().getFullYear()} <Link to="/"> <span className="text-indigo"> Ankit Tailor</span></Link>
+            Copyright &copy; {new Date().getFullYear()}{" "}
+            <Link to="/">
+              {" "}
+              <span className="text-indigo"> Ankit Tailor</span>
+            </Link>
           </p>
           <p className="mx-3 my-3">
-            Built with <span className="cursor-pointer" role="img" aria-label="heart"> ❤️</span> & Open sourced on <a href="https://github.com/ankit-tailor/ankittailor" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="hover:text-indigo" icon={faGithub} /> </a>
+            Built with{" "}
+            <span className="cursor-pointer" role="img" aria-label="heart">
+              {" "}
+              ❤️
+            </span>{" "}
+            & Open sourced on{" "}
+            <a
+              href="https://github.com/ankit-tailor/ankittailor"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <FontAwesomeIcon
+                className="hover:text-indigo"
+                icon={faGithub}
+              />{" "}
+            </a>
           </p>
         </div>
       </footer>
