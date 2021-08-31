@@ -85,6 +85,11 @@ const About = () => {
                                         <span role="img" aria-label="work">👨‍🌾</span> Open Source projects & contributions:<a href="https://github.com/ankit-tailor" target="_blank" without rel="noreferrer"> <span className="font-bold text-indigo"> GitHub </span></a>
                                     </p>
                                 </li>
+                                <li>
+                                    <p>
+                                        <span role="img" aria-label="work">👨‍🌾</span> Answers and reviews:<a href="https://stackoverflow.com/users/11812542/ankit-tailor" target="_blank" without rel="noreferrer"> <span className="font-bold text-indigo"> Stackoverflow </span></a>
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
