@@ -87,7 +87,7 @@ const About = () => {
                                 </li>
                                 <li>
                                     <p>
-                                        <span role="img" aria-label="work">👨‍🌾</span> Answers and reviews:<a href="https://stackoverflow.com/users/11812542/ankit-tailor" target="_blank" without rel="noreferrer"> <span className="font-bold text-indigo"> Stackoverflow </span></a>
+                                        <span role="img" aria-label="work">🔎</span> Answers and reviews:<a href="https://stackoverflow.com/users/11812542/ankit-tailor" target="_blank" without rel="noreferrer"> <span className="font-bold text-indigo"> Stackoverflow </span></a>
                                     </p>
                                 </li>
                             </ul>
