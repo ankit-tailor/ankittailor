@@ -17,13 +17,13 @@ function Nav() {
     theme === "dark" ? (
       <WbSunnyIcon
         onClick={toggleTheme}
-        className="cursor-pointer text-dark dark:text-white items-center"
+        className="ml-2 cursor-pointer text-dark dark:text-white items-center"
       />
     ) : (
       theme === "light" && (
         <NightsStayIcon
           onClick={toggleTheme}
-          className="cursor-pointer text-dark dark:text-white items-center"
+          className="ml-2 cursor-pointer text-dark dark:text-white items-center"
         />
       )
     )
@@ -86,7 +86,7 @@ function Nav() {
               </div>
               {/* </div> */}
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -135,17 +135,17 @@ function Nav() {
 
         <Transition
           show={isOpen}
-          enter="transition ease-out duration-100 transform"
+          // enter="transition ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
-          leave="transition ease-in duration-75 transform"
+          // leave="transition ease-in duration-75 transform"
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
           <div className="md:hidden" id="mobile-menu">
             <div className="backdrop">
               <div className="transform shadow-2xl sidebar dark:bg-dark bg-white dark:text-dark px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <div style={{ textAlign: "right" }}>
+                <div className="flex justify-end">
                   {isOpen && (
                     <button
                       onClick={() => setIsOpen(!isOpen)}
