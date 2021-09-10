@@ -17,8 +17,6 @@ export default ({ children }) => {
     } else {
       document.documentElement.classList.remove("dark")
     }
-    if (isBrowser && !window.localStorage.theme)
-      window.localStorage.theme = theme
   }, [toggleTheme])
 
   return (
