@@ -1,9 +1,9 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import Blog from "../components/blogs/Blog"
+import Blog from "../components/blog/Blog"
 import Intro from "../components/intro/Intro"
 import Layout from "../components/layout/Layout"
-import Project from "../components/projects/Project"
+import Project from "../components/project/Project"
 import Skills from "../components/skills/Skills"
 
 const Home = ({ data }) => {
