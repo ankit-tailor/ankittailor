@@ -12,6 +12,23 @@ const isBrowser = typeof window !== "undefined"
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const { theme, toggleTheme } = useContext(ThemeContext)
+
+  const toggleThemeIcon = () => (
+    theme === "dark" ? (
+      <WbSunnyIcon
+        onClick={toggleTheme}
+        className="cursor-pointer text-dark dark:text-white items-center"
+      />
+    ) : (
+      theme === "light" && (
+        <NightsStayIcon
+          onClick={toggleTheme}
+          className="cursor-pointer text-dark dark:text-white items-center"
+        />
+      )
+    )
+  )
+
   return (
     <>
       {/* <div className=""> */}
@@ -65,20 +82,7 @@ function Nav() {
                 >
                   Contact
                 </Link>
-                {isBrowser && window.localStorage.theme === "dark" ? (
-                  <WbSunnyIcon
-                    onClick={toggleTheme}
-                    className="cursor-pointer text-dark dark:text-white items-center"
-                  />
-                ) : (
-                  isBrowser &&
-                  window.localStorage.theme !== "dark" && (
-                    <NightsStayIcon
-                      onClick={toggleTheme}
-                      className="cursor-pointer text-dark dark:text-white items-center"
-                    />
-                  )
-                )}
+                {toggleThemeIcon()}
               </div>
               {/* </div> */}
             </div>
@@ -204,17 +208,7 @@ function Nav() {
                 >
                   Contact
                 </Link>
-                {isBrowser && window.localStorage.theme === "dark" ? (
-                  <WbSunnyIcon
-                    onClick={toggleTheme}
-                    className="cursor-pointer mx-3 text-xl font-medium text-white items-center"
-                  />
-                ) : (
-                  <NightsStayIcon
-                    onClick={toggleTheme}
-                    className="cursor-pointer mx-3 text-xl font-medium text-dark items-center"
-                  />
-                )}
+                {toggleThemeIcon()}
               </div>
             </div>
           </div>
