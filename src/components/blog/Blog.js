@@ -4,11 +4,11 @@ import Img from "gatsby-image"
 
 const Blog = ({ title, description, fluid, date, link }) => {
   return (
-    <div className="p-6 rounded-lg shadow-2xl my-2 cursor-pointer bg-white text-dark dark:bg-dark dark:text-white w-full">
+    <div className="p-6 max-h-30 rounded-lg shadow-2xl my-2 cursor-pointer bg-white text-dark dark:bg-dark dark:text-white w-full">
       <a href={link} target="_blank" rel="noreferrer">
         <div className="flex">
           <Img
-            className="w-4/12 max-h-30 transform-scale shadow-2xl mx-2"
+            className="w-6/12 sm:inline hidden transform-scale shadow-2xl mx-2"
             fluid={fluid}
             alt={title}
           />
@@ -19,12 +19,12 @@ const Blog = ({ title, description, fluid, date, link }) => {
                   ? `${title.substring(0, 30)}...`
                   : `${title}`}
               </Typography>
-              <Typography variant="body2" component="p">
+              <Typography variant="body2" className="text-active" component="p">
                 {`${description?.substring(0, 150)}...`}
               </Typography>
             </div>
             <Typography variant="body2" className="text-active" component="p">
-              {date}
+              <span role="img" aria-label="wave">⏱</span>{date}
             </Typography>
           </div>
         </div>
