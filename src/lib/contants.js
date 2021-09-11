@@ -12,4 +12,6 @@ const SOCIAL_LINKS = {
   EMAIL: "tailorankit3345@gmail.com"
 }
 
-export { PROJECT_REPO, PROJECT_LINK, SOCIAL_LINKS }
+const RESUME = "https://drive.google.com/file/d/1asKAMLexNMWkBiraY0TeBr6T1mtjo_tl/view?usp=sharing"
+
+export { PROJECT_REPO, PROJECT_LINK, SOCIAL_LINKS, RESUME }
