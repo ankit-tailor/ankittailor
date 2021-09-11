@@ -7,8 +7,6 @@ import "./Navbar.css"
 import { useContext } from "react"
 import { ThemeContext } from "../../providers/ThemeProvider"
 
-const isBrowser = typeof window !== "undefined"
-
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const { theme, toggleTheme } = useContext(ThemeContext)
