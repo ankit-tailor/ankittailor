@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
             is the space where I share all my content related to software
             development. I am always open for interesting questions &
-            collaborations & also you can share some memes on instagram. 😃
+            collaborations & also you can share some memes on instagram.<span role="img" aria-label="wave"> 😃 </span>
           </div>
           <div className="flex justify-evenly">
             <div>
