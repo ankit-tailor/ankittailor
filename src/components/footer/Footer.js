@@ -9,6 +9,8 @@ import {
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { PROJECT_LINK, PROJECT_REPO, SOCIAL_LINKS } from "../../lib/contants"
+
 
 const Footer = () => {
   return (
@@ -20,7 +22,7 @@ const Footer = () => {
           <div className="my-4">
             About
             <Link className="text-indigo underline mx-1" to="/">
-              ankittailor.me
+              {PROJECT_LINK}
             </Link>
             is the space where I share all my content related to software
             development. I am always open for interesting questions &
@@ -71,7 +73,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a
-                    href="https://stackoverflow.com/users/11812542/ankit-tailor"
+                    href={SOCIAL_LINKS.STACKOVERFLOW}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -82,7 +84,7 @@ const Footer = () => {
                     />{" "}
                   </a>
                   <a
-                    href="https://twitter.com/ankit__tailor"
+                    href={SOCIAL_LINKS.TWITTER}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -93,7 +95,7 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href="https://ankit-tailor.hashnode.dev"
+                    href={SOCIAL_LINKS.HASHNODE}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -108,7 +110,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/ankit-tailor"
+                    href={SOCIAL_LINKS.GITHUB}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -119,7 +121,7 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href="https://instagram.com/_akkiiii._"
+                    href={SOCIAL_LINKS.INSTAGRAM}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -130,7 +132,7 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href="https://linkedin.com/in/ankit-tailor"
+                    href={SOCIAL_LINKS.LINKEDIN}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -163,7 +165,7 @@ const Footer = () => {
             </span>{" "}
             & Open sourced on{" "}
             <a
-              href="https://github.com/ankit-tailor/ankittailor"
+              href={PROJECT_REPO}
               target="_blank"
               rel="noreferrer"
             >
