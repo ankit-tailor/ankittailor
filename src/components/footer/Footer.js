@@ -3,13 +3,13 @@ import React from "react"
 import {
   faTwitter,
   faLinkedinIn,
-  faInstagram,
   faGithub,
   faNode,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { PROJECT_LINK, PROJECT_REPO, SOCIAL_LINKS } from "../../lib/contants"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   return (
@@ -124,14 +124,14 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href={SOCIAL_LINKS.INSTAGRAM}
+                    href={`mailto:${SOCIAL_LINKS.EMAIL}`}
                     target="_blank"
                     rel="noreferrer"
                   >
                     {" "}
                     <FontAwesomeIcon
                       className="text-xl hover:text-indigo cursor-pointer mx-2 my-2 font-medium"
-                      icon={faInstagram}
+                      icon={faEnvelope}
                     />
                   </a>
                   <a
