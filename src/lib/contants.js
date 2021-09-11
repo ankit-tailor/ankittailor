@@ -9,6 +9,7 @@ const SOCIAL_LINKS = {
   TWITTER: "https://twitter.com/ankit__tailor",
   GITHUB: "https://github.com/ankit-tailor",
   INSTAGRAM: "https://instagram.com/_akkiiii._",
+  EMAIL: "tailorankit3345@gmail.com"
 }
 
 export { PROJECT_REPO, PROJECT_LINK, SOCIAL_LINKS }
