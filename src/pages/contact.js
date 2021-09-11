@@ -21,7 +21,7 @@ function contact() {
               <span className="text-indigo underline">
                 Contact
                 <span role="img" aria-label="wave">
-                  🚀
+                  📲
                 </span>
               </span>
             </h1>
