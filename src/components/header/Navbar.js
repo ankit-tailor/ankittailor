@@ -25,7 +25,7 @@ function Nav() {
     }
   `)
 
-  const toggleThemeIcon = () => (
+  const toggleThemeIcon = () =>
     theme === "dark" ? (
       <WbSunnyIcon
         onClick={toggleTheme}
@@ -39,7 +39,6 @@ function Nav() {
         />
       )
     )
-  )
 
   return (
     <>

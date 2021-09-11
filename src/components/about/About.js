@@ -40,7 +40,10 @@ const About = () => {
             <div>
               <p className="text-xl">
                 I'm Ankit Tailor,
-                <span className="text-indigo"> Frontend Engineer </span>from{" "}
+                <span className="text-indigo">
+                  {" "}
+                  Frontend Engineer{" "}
+                </span>from{" "}
                 <span className="text-indigo"> Gujarat, India. </span>
                 Currently, I'm working at early stage startup{" "}
                 <span className="text-indigo">iSimplexity</span>.

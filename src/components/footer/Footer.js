@@ -11,7 +11,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { PROJECT_LINK, PROJECT_REPO, SOCIAL_LINKS } from "../../lib/contants"
 
-
 const Footer = () => {
   return (
     <>
@@ -26,7 +25,11 @@ const Footer = () => {
             </Link>
             is the space where I share all my content related to software
             development. I am always open for interesting questions &
-            collaborations & also you can share some memes on instagram.<span role="img" aria-label="wave"> 😃 </span>
+            collaborations & also you can share some memes on instagram.
+            <span role="img" aria-label="wave">
+              {" "}
+              😃{" "}
+            </span>
           </div>
           <div className="flex justify-evenly">
             <div>
@@ -164,11 +167,7 @@ const Footer = () => {
               ❤️
             </span>{" "}
             & Open sourced on{" "}
-            <a
-              href={PROJECT_REPO}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={PROJECT_REPO} target="_blank" rel="noreferrer">
               {" "}
               <FontAwesomeIcon
                 className="hover:text-indigo"
