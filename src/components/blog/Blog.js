@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Blog = ({ title, description, fluid, date, link }) => {
   return (
     <div className="p-6 rounded-lg shadow-2xl my-2 cursor-pointer bg-white text-dark dark:bg-dark dark:text-white w-full">
-      <a href={link} target="_blank" rel="noopener">
+      <a href={link} target="_blank" rel="noreferrer">
         <div className="flex">
           <Img
             className="w-4/12 max-h-30 transform-scale shadow-2xl mx-2"
