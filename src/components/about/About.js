@@ -2,6 +2,7 @@ import React from "react"
 import Typography from "@material-ui/core/Typography"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { SOCIAL_LINKS } from "../../lib/contants"
 
 const About = () => {
   const profileImage = useStaticQuery(graphql`
@@ -145,7 +146,7 @@ const About = () => {
                     </span>{" "}
                     Blog:{" "}
                     <a
-                      href="https://ankit-tailor.hashnode.dev"
+                      href={SOCIAL_LINKS.HASHNODE}
                       target="_blank"
                       without
                       rel="noreferrer"
@@ -162,7 +163,7 @@ const About = () => {
                     </span>{" "}
                     Open Source projects & contributions:
                     <a
-                      href="https://github.com/ankit-tailor"
+                      href={SOCIAL_LINKS.GITHUB}
                       target="_blank"
                       without
                       rel="noreferrer"
@@ -179,7 +180,7 @@ const About = () => {
                     </span>{" "}
                     Answers and reviews:
                     <a
-                      href="https://stackoverflow.com/users/11812542/ankit-tailor"
+                      href={SOCIAL_LINKS.STACKOVERFLOW}
                       target="_blank"
                       without
                       rel="noreferrer"
