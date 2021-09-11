@@ -8,7 +8,7 @@ const Blog = ({ title, description, fluid, date, link }) => {
       <a href={link} target="_blank" rel="noreferrer">
         <div className="flex">
           <Img
-            className="w-6/12 sm:inline hidden transform-scale shadow-2xl mx-2"
+            className="w-6/12 rounded-md sm:inline hidden transform-scale shadow-2xl mx-2"
             fluid={fluid}
             alt={title}
           />
