@@ -11,7 +11,7 @@ module.exports = {
     description: "I'm Ankit Tailor, a Frontend Developer from Gujarat, India. Currently I am Frontend Developer Intern at iSimplexity. I share my knowledge by writing blogs on hashnode.",
     siteUrl: "https://ankittailor.tech",
     url: "ankittailor.tech",
-    author: "Ankit Tailor",
+    author: "ankittailor",
     twitter: "@ankit__tailor",
     image: `/profile.jpeg`,
   },
