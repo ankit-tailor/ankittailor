@@ -21,6 +21,20 @@
   background: rgba(80, 78, 78, 0.5);
 }
 
+.animate-logo:hover {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+}
+
 .sidebar {
   position: absolute;
   top: 0;
