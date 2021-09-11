@@ -4,7 +4,6 @@ import Layout from "../../components/layout/Layout"
 import ProjectList from "../../components/project/ProjectList"
 import SEO from "../../components/SEO/seo"
 
-
 function Projects({ data }) {
   const allProjects = data.projects.edges
 

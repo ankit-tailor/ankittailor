@@ -19,11 +19,7 @@ const Intro = () => {
             shoot me a meme! I'll happy to see ;)
           </p>
           <button className="block transform-scale shadow-2xl sm:inline w-8/12 sm:w-4/12 md:w-3/12 lg:w-2/12 bg-white text-indigo py-2 sm:m-0 my-6 mx-auto rounded px-4">
-            <a
-              href={RESUME}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={RESUME} target="_blank" rel="noopener noreferrer">
               {" "}
               View Resume{" "}
             </a>

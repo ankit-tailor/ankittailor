@@ -25,7 +25,10 @@ function contact() {
                 </span>
               </span>
             </h1>
-            <p className="text-2xl my-6 font-bold">Feel free to contact me incase you need any help or want to do some chit-chat :)</p>
+            <p className="text-2xl my-6 font-bold">
+              Feel free to contact me incase you need any help or want to do
+              some chit-chat :)
+            </p>
 
             <ul>
               <li>
@@ -34,7 +37,17 @@ function contact() {
                     className="mx-4 my-2 font-medium"
                     icon={faEnvelope}
                   />
-                  <p> - <a href={`mailto:${SOCIAL_LINKS.EMAIL}`}> <span className="mx-4 text-indigo font-bold underline"> Email </span> </a></p>
+                  <p>
+                    {" "}
+                    -{" "}
+                    <a href={`mailto:${SOCIAL_LINKS.EMAIL}`}>
+                      {" "}
+                      <span className="mx-4 text-indigo font-bold underline">
+                        {" "}
+                        Email{" "}
+                      </span>{" "}
+                    </a>
+                  </p>
                 </div>
               </li>
               <li>
@@ -43,7 +56,13 @@ function contact() {
                     className="mx-4 my-2 font-medium"
                     icon={faLinkedinIn}
                   />
-                  <p> -<span className="mx-4 text-indigo font-bold underline"><a href={SOCIAL_LINKS.LINKEDIN}>  LinkedIn</a> </span> </p>
+                  <p>
+                    {" "}
+                    -
+                    <span className="mx-4 text-indigo font-bold underline">
+                      <a href={SOCIAL_LINKS.LINKEDIN}> LinkedIn</a>{" "}
+                    </span>{" "}
+                  </p>
                 </div>
               </li>
               <li>
@@ -52,7 +71,13 @@ function contact() {
                     className="mx-4 my-2 font-medium"
                     icon={faTwitter}
                   />
-                  <p> -<span className="mx-4 text-indigo font-bold underline"><a href={SOCIAL_LINKS.TWITTER}>  Twitter</a> </span> </p>
+                  <p>
+                    {" "}
+                    -
+                    <span className="mx-4 text-indigo font-bold underline">
+                      <a href={SOCIAL_LINKS.TWITTER}> Twitter</a>{" "}
+                    </span>{" "}
+                  </p>
                 </div>
               </li>
               <li>
@@ -61,15 +86,24 @@ function contact() {
                     className="mx-4 my-2 font-medium"
                     icon={faInstagram}
                   />
-                  <p> - <a hreg={SOCIAL_LINKS.INSTAGRAM}> <span className="mx-4 text-indigo font-bold underline"> Instagram </span> </a></p>
+                  <p>
+                    {" "}
+                    -{" "}
+                    <a hreg={SOCIAL_LINKS.INSTAGRAM}>
+                      {" "}
+                      <span className="mx-4 text-indigo font-bold underline">
+                        {" "}
+                        Instagram{" "}
+                      </span>{" "}
+                    </a>
+                  </p>
                 </div>
               </li>
             </ul>
-
           </div>
         </div>
       </div>
-    </Layout >
+    </Layout>
   )
 }
 
