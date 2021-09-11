@@ -1,10 +1,10 @@
 import React, { createContext, useEffect } from "react"
-import useDarkMode from "../hooks/useDarkMode"
+import { useDarkMode } from "../hooks/useDarkMode"
 
 export const ThemeContext = createContext("light")
 const isBrowser = typeof window !== "undefined"
 
-export default ({ children }) => {
+export const ThemeProvider = ({ children }) => {
   const [theme, toggleTheme] = useDarkMode()
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import useMedia from "./useMedia"
 
 const isBrowser = typeof window !== "undefined"
 
-export default () => {
+export const useDarkMode = () => {
   const [theme, setTheme] = useState("light")
 
   const toggleTheme = () => {
