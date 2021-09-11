@@ -2,14 +2,28 @@ import React, { useState } from "react"
 import { Transition } from "@headlessui/react"
 import WbSunnyIcon from "@material-ui/icons/WbSunny"
 import NightsStayIcon from "@material-ui/icons/NightsStay"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import "./Navbar.css"
 import { useContext } from "react"
 import { ThemeContext } from "../../providers/ThemeProvider"
+import Img from "gatsby-image"
+// import HeroImage from "../../../static/hero-logo.png"
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const { theme, toggleTheme } = useContext(ThemeContext)
+
+  const heroImage = useStaticQuery(graphql`
+    query HeroImageQuery {
+      file(relativePath: { eq: "hero-logo.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
   const toggleThemeIcon = () => (
     theme === "dark" ? (
@@ -36,11 +50,19 @@ function Nav() {
             {/* <div className="flex justify-evenly items-center"> */}
             <div className="flex-shrink-4">
               <header>
-                <span className="text-active text-xl"> &lt;</span>
+                {/* <span className="text-active text-xl"> &lt;</span>
                 <span className="text-indigo text-3xl dark:text-white brand-name">
                   Ankit Tailor
                 </span>
-                <span className="text-active text-xl"> /&gt;</span>
+                <span className="text-active text-xl"> /&gt;</span> */}
+                {/* <img src={HeroImage} className="w-8 h-10 sm:w-10 sm:h-14" /> */}
+                <Link to="/">
+                  <Img
+                    fluid={heroImage.file.childImageSharp.fluid}
+                    alt="profile_photo"
+                    className="cursor-pointer animate-logo shadow-2xl w-10 h-14"
+                  />
+                </Link>
               </header>
             </div>
             <div className="hidden md:block">
