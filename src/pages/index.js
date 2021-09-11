@@ -4,6 +4,7 @@ import Blog from "../components/blog/Blog"
 import Intro from "../components/intro/Intro"
 import Layout from "../components/layout/Layout"
 import Project from "../components/project/Project"
+import SEO from "../components/SEO/seo"
 import Skills from "../components/skills/Skills"
 
 const Home = ({ data }) => {
@@ -12,6 +13,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
+      <SEO siteTitle="Frontend Developer" />
       <Intro />
       <Skills />
       <div className="text-dark dark:text-white bg-white dark:bg-dark">
