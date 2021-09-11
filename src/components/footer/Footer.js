@@ -38,31 +38,31 @@ const Footer = () => {
               </h1>
               <Link
                 to="/"
-                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 hover:underline text-dark dark:text-white rounded-md text-sm"
               >
                 Home
               </Link>
               <Link
                 to="/projects"
-                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 hover:underline text-dark dark:text-white rounded-md text-sm"
               >
                 Projects
               </Link>
               <Link
                 to="/blogs"
-                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 hover:underline text-dark dark:text-white rounded-md text-sm"
               >
                 Blogs
               </Link>
               <Link
                 to="/about"
-                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 hover:underline text-dark dark:text-white rounded-md text-sm"
               >
                 About
               </Link>
               <Link
                 to="/contact"
-                className="my-1 block leading-2 underline text-dark dark:text-white rounded-md text-sm"
+                className="my-1 block leading-2 hover:underline text-dark dark:text-white rounded-md text-sm"
               >
                 Contact
               </Link>
