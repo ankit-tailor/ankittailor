@@ -1,4 +1,5 @@
 import React from "react"
+import { SOCIAL_LINKS, RESUME } from "../../lib/contants"
 
 const Intro = () => {
   return (
@@ -19,7 +20,7 @@ const Intro = () => {
           </p>
           <button className="block transform-scale shadow-2xl sm:inline w-8/12 sm:w-4/12 md:w-3/12 lg:w-2/12 bg-white text-indigo py-2 sm:m-0 my-6 mx-auto rounded px-4">
             <a
-              href="https://drive.google.com/file/d/1asKAMLexNMWkBiraY0TeBr6T1mtjo_tl/view?usp=sharing"
+              href={RESUME}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -28,7 +29,7 @@ const Intro = () => {
             </a>
           </button>
           <button className="block transform-scale shadow-2xl sm:inline w-8/12 sm:w-4/12 md:w-3/12 lg:w-2/12 bg-indigo text-white py-2 mx-auto sm:m-6 my-4 rounded px-4">
-            <a href="mailto:tailorankit3345@gmail.com"> Get In Touch</a>
+            <a href={`mailto:${SOCIAL_LINKS.EMAIL}`}> Get In Touch</a>
           </button>
         </div>
       </div>
