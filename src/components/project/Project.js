@@ -9,14 +9,6 @@ import Img from "gatsby-image"
 function Project({ name, github, liveProject, techstack, fluid }) {
   return (
     <Card className="py-8 shadow-2xl bg-white cursor-pointer dark:bg-dark text-dark dark:text-white md:w-full w-full">
-      {/* <CardMedia
-                className="h-48 transform-scale ease-in"
-                component="img"
-                alt="Contemplative Reptile"
-                height="50"
-                image="https://images.pexels.com/photos/4533077/pexels-photo-4533077.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-                title="Contemplative Reptile"
-            /> */}
       <Img
         fluid={fluid}
         className="h-48 transform-scale ease-in"
