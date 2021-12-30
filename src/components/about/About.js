@@ -41,20 +41,33 @@ const About = () => {
             <div>
               <p className="text-xl">
                 I'm Ankit Tailor,
-                <span className="text-indigo">
+                <span className="font-bold text-indigo">
                   {" "}
-                  Frontend Engineer{" "}
-                </span>from{" "}
-                <span className="text-indigo"> Gujarat, India. </span>
-                Currently, I'm working at early stage startup{" "}
-                <span className="text-indigo">iSimplexity</span>.
+                  Software Engineer{" "}
+                </span>
+                from{" "}
+                <span className="font-bold text-indigo"> Gujarat, India. </span>
+                Currently, I'm working at{" "}
+                <span className="fo`nt-bold text-indigo">
+                  <a
+                    href="https://geekyants.com"
+                    target="_blank"
+                    without
+                    rel="noreferrer"
+                  >
+                    GeekyAnts
+                  </a>
+                </span>
+                .
               </p>
               <br />
               <p className="text-xl">
                 I'm self-taught developer with degree in{" "}
-                <span className="text-indigo">Computer Engineering. </span> I've
-                worked with Javascript and related frameworks & libraries,
-                mainly <span className="text-indigo"> React </span>.
+                <span className="font-bold text-indigo">
+                  Computer Engineering.{" "}
+                </span>{" "}
+                I've worked with Javascript and related frameworks & libraries,
+                mainly <span className="font-bold text-indigo"> React </span>.
               </p>
               <br />
               <Typography
