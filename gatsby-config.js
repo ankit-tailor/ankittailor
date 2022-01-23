@@ -12,7 +12,8 @@ module.exports = {
     siteUrl: "https://ankittailor.tech",
     url: "ankittailor.tech",
     author: "ankittailor",
-    twitter: "@ankit__tailor",
+    twitter: "@ankittailor__",
+    twitterDescription: "Software Engineer Intern @geekyants | code, photos, memes !",
     image: `/profile.jpeg`,
   },
   plugins: [
