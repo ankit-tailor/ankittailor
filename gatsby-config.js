@@ -12,9 +12,11 @@ module.exports = {
     siteUrl: "https://ankittailor.tech",
     url: "ankittailor.tech",
     author: "Ankit Tailor",
+    keywords: "Software Engineer, ",
     twitter: "@ankittailor__",
+    linkedin: "@ankit-tailor",
     twitterDescription: "Software Engineer Intern @geekyants | code, photos, memes !",
-    image: `/profile.jpeg`,
+    image: `src/assets/profile.jpeg`,
   },
   plugins: [
     "gatsby-plugin-postcss",
