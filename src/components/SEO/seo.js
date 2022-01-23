@@ -24,7 +24,7 @@ const SEO = ({ siteTitle = "" }) => {
   const title = `${defaults.title} • ${siteTitle}`
   const description = defaults.description
   const url = defaults.siteUrl
-  const image = ""
+  const image = defaults.image
 
   return (
     <Helmet>
