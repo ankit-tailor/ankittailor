@@ -48,7 +48,7 @@ const About = () => {
                 from{" "}
                 <span className="font-bold text-indigo"> Gujarat, India. </span>
                 Currently, I'm working at{" "}
-                <span className="fo`nt-bold text-indigo">
+                <span className="font-bold text-indigo">
                   <a
                     href="https://geekyants.com"
                     target="_blank"
