@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "Ankit Tailor",
     description:
-      "I'm Ankit Tailor, a Frontend Developer from Gujarat, India. Currently I am Software Engineer Intern at GeekyAnts. I share my knowledge by writing blogs on hashnode.",
+      "I'm Ankit Tailor, a Software Engineer from Gujarat, India. Currently I am Software Engineer Intern at GeekyAnts. I share my knowledge by writing blogs on hashnode.",
     siteUrl: "https://ankittailor.tech",
     url: "ankittailor.tech",
     author: "Ankit Tailor",
