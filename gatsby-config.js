@@ -8,15 +8,17 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Ankit Tailor",
-    description: "I'm Ankit Tailor, a Frontend Developer from Gujarat, India. Currently I am Software Engineer Intern at GeekyAnts. I share my knowledge by writing blogs on hashnode.",
+    description:
+      "I'm Ankit Tailor, a Software Engineer from Gujarat, India. Currently I am Software Engineer Intern at GeekyAnts. I share my knowledge by writing blogs on hashnode.",
     siteUrl: "https://ankittailor.tech",
     url: "ankittailor.tech",
     author: "Ankit Tailor",
     keywords: "Software Engineer, ",
     twitter: "@ankittailor__",
     linkedin: "@ankit-tailor",
-    twitterDescription: "Software Engineer Intern @geekyants | code, photos, memes !",
-    image: `src/assets/profile.jpeg`,
+    twitterDescription:
+      "Software Engineer Intern @geekyants | code, photos, memes !",
+    image: `/profile.jpeg`,
   },
   plugins: [
     "gatsby-plugin-postcss",
