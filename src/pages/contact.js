@@ -14,9 +14,9 @@ function contact() {
   return (
     <Layout>
       <SEO siteTitle="Contact" />
-      <div className="dark:bg-dark bg-white text-dark dark:text-white">
+      <div className="dark:bg-dark bg-white text-dark dark:text-white min-h-screen">
         <div className="lg:container mx-8 py-4 lg:mx-auto">
-          <div className="py-2 lg:px-5 lg:px-20 sm:py-2">
+          <div className="py-2 lg:px-20 sm:py-2">
             <h1 className="text-4xl sm:text-3xl my-3 font-bold">
               <span className="text-indigo underline">
                 Contact
