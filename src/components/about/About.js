@@ -47,10 +47,21 @@ const About = () => {
                 </span>
                 from{" "}
                 <span className="font-bold text-indigo"> Gujarat, India. </span>
-                Currently, I'm working at{" "}
+                Currently, I'm contributing to{" "}
                 <span className="font-bold text-indigo">
                   <a
-                    href="https://geekyants.com"
+                    href="https://github.com/GeekyAnts/NativeBase"
+                    target="_blank"
+                    without
+                    rel="noreferrer"
+                  >
+                    NativeBase
+                  </a>
+                </span>{" "}
+                @
+                <span className="font-bold text-indigo">
+                  <a
+                    href="https://GeekyAnts.com"
                     target="_blank"
                     without
                     rel="noreferrer"
@@ -67,7 +78,12 @@ const About = () => {
                   Computer Engineering.{" "}
                 </span>{" "}
                 I've worked with Javascript and related frameworks & libraries,
-                mainly <span className="font-bold text-indigo"> React </span>.
+                mainly{" "}
+                <span className="font-bold text-indigo">
+                  {" "}
+                  React / React-Native{" "}
+                </span>
+                .
               </p>
               <br />
               <Typography
@@ -119,7 +135,7 @@ const About = () => {
                     Frontend:{" "}
                     <span className="font-bold text-indigo">
                       {" "}
-                      ReactJS, Bootstarp, Tailwind{" "}
+                      ReactJS, ReactNative, Bootstarp, Tailwind{" "}
                     </span>
                   </p>
                 </li>

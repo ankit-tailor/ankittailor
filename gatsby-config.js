@@ -9,15 +9,15 @@ module.exports = {
   siteMetadata: {
     title: "Ankit Tailor",
     description:
-      "I'm Ankit Tailor, a Software Engineer from Gujarat, India. Currently I am Software Engineer Intern at GeekyAnts. I share my knowledge by writing blogs on hashnode.",
-    siteUrl: "https://ankittailor.tech",
-    url: "ankittailor.tech",
+      "I'm Ankit Tailor, a Software Engineer from Gujarat, India. Currently I am contributing to NativeBase core @GeekyAnts. I share my knowledge by writing blogs and contributing to community.",
+    siteUrl: "https://ankits.info",
+    url: "https://ankits.info",
     author: "Ankit Tailor",
-    keywords: "Software Engineer, ",
+    keywords: "Core Developer @NativeBase",
     twitter: "@ankittailor__",
     linkedin: "@ankit-tailor",
     twitterDescription:
-      "Software Engineer Intern @geekyants | code, photos, memes !",
+      "🧑🏻‍💻 @geekyants | Building  @nativebase | ankits.info",
     image: `/profile.jpeg`,
   },
   plugins: [
