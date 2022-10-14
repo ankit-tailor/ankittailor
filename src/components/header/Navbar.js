@@ -44,7 +44,7 @@ function Nav() {
     <>
       {/* <div className=""> */}
       <nav className="bg-white dark:bg-dark">
-        <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="px-4 sm:px-6 lg:px-8 lg:mx-28">
           <div className="flex items-center justify-between h-16">
             {/* <div className="flex justify-evenly items-center"> */}
             <div className="flex-shrink-4">
@@ -199,13 +199,13 @@ function Nav() {
                 >
                   Home
                 </Link>
-                <Link
+                {/* <Link
                   to="/projects"
                   className="block dark:hover:text-active hover:text-active text-dark dark:text-white px-3 py-2 rounded-md text-md font-medium"
                   activeClassName="dark:text-active text-active"
                 >
                   Projects
-                </Link>
+                </Link> */}
                 <Link
                   to="/blogs"
                   className="block dark:hover:text-active hover:text-active text-dark dark:text-white px-3 py-2 rounded-md text-md font-medium"
