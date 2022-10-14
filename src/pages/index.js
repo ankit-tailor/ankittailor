@@ -47,11 +47,11 @@ const Home = ({ data }) => {
                 )
               )}
             </div>
-            <Link to="/projects">
+            {/* <Link to="/projects">
               <button className="block transform-scale shadow-2xl w-6/12 lg:w-4/12 bg-indigo text-white py-2 mx-auto my-10 rounded px-4">
                 See More
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
