@@ -1,11 +1,11 @@
 const PROJECT_REPO = "https://github.com/ankit-tailor/ankittailor"
 
-const PROJECT_LINK = "ankittailor.tech"
+const PROJECT_LINK = "ankits.info"
 
 const SOCIAL_LINKS = {
   STACKOVERFLOW: "https://stackoverflow.com/users/11812542/ankit-tailor",
   LINKEDIN: "https://linkedin.com/in/ankit-tailor",
-  HASHNODE: "https://blog.ankittailor.tech",
+  HASHNODE: "https://blogs.ankits.info",
   TWITTER: "https://twitter.com/ankittailor__",
   GITHUB: "https://github.com/ankit-tailor",
   INSTAGRAM: "https://instagram.com/_akkiiii._",
