@@ -1,14 +1,19 @@
-import React from "react"
-import About from "../components/about/About"
-import Layout from "../components/layout/Layout"
-import SEO from "../components/SEO/seo"
+import React, { lazy, Suspense } from "react"
+
+const About = lazy(() => import("../components/about/About"))
+const Layout = lazy(() => import("../components/layout/Layout"))
+const SEO = lazy(() => import("../components/SEO/seo"))
+
+const renderLoader = () => <p>Loading</p>
 
 function about() {
   return (
-    <Layout>
-      <SEO siteTitle="About" />
-      <About />
-    </Layout>
+    <Suspense fallback={renderLoader()}>
+      <Layout>
+        <SEO siteTitle="About" />
+        <About />
+      </Layout>
+    </Suspense>
   )
 }
 
