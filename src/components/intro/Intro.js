@@ -4,8 +4,8 @@ import React from "react"
 const Intro = () => {
   return (
     <div className="dark:bg-dark bg-white text-dark dark:text-white">
-      <div className="sm:container py-12 sm:mx-auto">
-        <div className="py-10 px-5 sm:px-20 sm:py-20">
+      <div className="px-4 sm:px-0  sm:container py-12 sm:mx-auto">
+        <div className="py-10 sm:py-20">
           <h1 className="text-2xl sm:text-5xl my-3 font-medium">
             I'm{" "}
             <span className="text-3xl sm:text-6xl font-extrabold gradient-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-800">

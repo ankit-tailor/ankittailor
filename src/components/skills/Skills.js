@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <div className="text-dark dark:text-white bg-white dark:bg-dark">
       <div className="sm:container sm:mx-auto">
-        <div className="center py-10 px-10 sm:px-20 sm:py-20">
+        <div className="center py-10 sm:py-20">
           <h1 className="text-center font-bold text-2xl">Skills</h1>
           <div className="text-center md:justify-center md:content-center my-10">
             <FontAwesomeIcon

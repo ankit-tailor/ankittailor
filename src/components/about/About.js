@@ -19,8 +19,8 @@ const About = () => {
 
   return (
     <div className="dark:bg-dark bg-white text-dark dark:text-white">
-      <div className="sm:container py-4 sm:mx-auto">
-        <div className="py-2 px-5 sm:px-20 sm:py-2">
+      <div className="px-4 lg:px-0 sm:container py-4 sm:mx-auto">
+        <div className="py-2 sm:py-2">
           <h1 className="text-2xl sm:text-3xl my-3 font-bold">
             <span className="text-indigo">
               {" "}
