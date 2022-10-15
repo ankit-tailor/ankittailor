@@ -6,8 +6,12 @@ const Intro = () => {
     <div className="dark:bg-dark bg-white text-dark dark:text-white">
       <div className="sm:container py-12 sm:mx-auto">
         <div className="py-10 px-5 sm:px-20 sm:py-20">
-          <h1 className="text-2xl sm:text-5xl my-3 font-bold">
-            I'm <span className="text-indigo"> Ankit Tailor </span>
+          <h1 className="text-2xl sm:text-5xl my-3 font-medium">
+            I'm{" "}
+            <span className="text-3xl sm:text-6xl font-extrabold gradient-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-800">
+              {" "}
+              Ankit Tailor{" "}
+            </span>
           </h1>
           <p className="sm:text-lg md:text-xl text-active container">
             Hi there, welcome to my own little corner on the internet. I am a
