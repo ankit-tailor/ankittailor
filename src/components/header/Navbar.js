@@ -1,13 +1,14 @@
 import React, { useState } from "react"
-import { Transition } from "@headlessui/react"
-import WbSunnyIcon from "@material-ui/icons/WbSunny"
-import NightsStayIcon from "@material-ui/icons/NightsStay"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import "./Navbar.css"
 import { useContext } from "react"
 import { ThemeContext } from "../../providers/ThemeProvider"
 import Img from "gatsby-image"
+import loadable from "@loadable/component"
 // import HeroImage from "../../../static/hero-logo.png"
+
+const WbSunnyIcon = loadable(() => import("@material-ui/icons/WbSunny"))
+const NightsStayIcon = loadable(() => import("@material-ui/icons/NightsStay"))
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)

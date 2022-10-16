@@ -1,7 +1,8 @@
+import loadable from "@loadable/component"
 import { Link } from "gatsby"
 import React from "react"
-import Layout from "../components/layout/Layout"
-import SEO from "../components/SEO/seo"
+const Layout = loadable(() => import("../components/layout/Layout"))
+const SEO = loadable(() => import("../components/SEO/seo"))
 
 function NotFound() {
   return (
