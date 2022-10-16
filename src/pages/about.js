@@ -1,3 +1,4 @@
+import React from "react"
 import loadable from "@loadable/component"
 import React from "react"
 const About = loadable(() => import("../components/about/About"))
@@ -6,10 +7,10 @@ const SEO = loadable(() => import("../components/SEO/seo"))
 
 function about() {
   return (
-    <Layout>
-      <SEO siteTitle="About" />
-      <About />
-    </Layout>
+      <Layout>
+        <SEO siteTitle="About" />
+        <About />
+      </Layout>
   )
 }
 
