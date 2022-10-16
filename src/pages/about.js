@@ -1,7 +1,8 @@
+import loadable from "@loadable/component"
 import React from "react"
-import About from "../components/about/About"
-import Layout from "../components/layout/Layout"
-import SEO from "../components/SEO/seo"
+const About = loadable(() => import("../components/about/About"))
+const Layout = loadable(() => import("../components/layout/Layout"))
+const SEO = loadable(() => import("../components/SEO/seo"))
 
 function about() {
   return (
