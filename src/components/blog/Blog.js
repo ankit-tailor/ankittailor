@@ -1,11 +1,16 @@
 import React from "react"
 import Typography from "@material-ui/core/Typography"
 import Img from "gatsby-image"
+import { SOCIAL_LINKS } from "../../lib/contants"
 
-const Blog = ({ title, description, fluid, date, link }) => {
+const Blog = ({ title, description, fluid, date, slug }) => {
   return (
     <div className="p-6 max-h-30 rounded-lg shadow-2xl my-2 cursor-pointer bg-white text-dark dark:bg-dark dark:text-white w-full">
-      <a href={link} target="_blank" rel="noreferrer">
+      <a
+        href={`${SOCIAL_LINKS.HASHNODE}/${slug}`}
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className="flex">
           <Img
             className="w-6/12 rounded-md sm:inline hidden transform-scale shadow-2xl mx-2"

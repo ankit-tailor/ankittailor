@@ -66,7 +66,7 @@ export const query = graphql`
             frontmatter {
               title
               description
-              link
+              slug
               date
               thumbnail {
                 childImageSharp {

@@ -25,7 +25,7 @@ function Blogs({ data }) {
               ({
                 node: {
                   childMarkdownRemark: {
-                    frontmatter: { title, description, date, link, thumbnail },
+                    frontmatter: { title, description, date, slug, thumbnail },
                   },
                 },
                 id,
@@ -36,7 +36,7 @@ function Blogs({ data }) {
                   description={description}
                   fluid={thumbnail.childImageSharp.fluid}
                   date={date}
-                  link={link}
+                  slug={slug}
                 />
               )
             )}
@@ -63,7 +63,7 @@ export const query = graphql`
             frontmatter {
               title
               description
-              link
+              slug
               date
               thumbnail {
                 childImageSharp {
