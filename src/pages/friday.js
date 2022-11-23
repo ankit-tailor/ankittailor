@@ -11,6 +11,8 @@ function Friday() {
     date.getSeconds(),
   ]
 
+  const [currentWeekDay, setCurrentWeekDay] = useState(date.getDay())
+
   const [day, setDay] = useState(
     currentDay > 5 ? currentDay - (currentDay % 5) : 5 - currentDay
   )
@@ -26,6 +28,7 @@ function Friday() {
     setHours(23 - date.getHours())
     setMinutes(59 - date.getMinutes())
     setSeconds(59 - date.getSeconds())
+    setCurrentWeekDay(date.getDay())
   }
 
   React.useEffect(() => {
@@ -38,7 +41,7 @@ function Friday() {
     <Layout>
       <SEO siteTitle="Friday haiii !!🥳🍻" />
       <div className="dark:bg-dark bg-white text-dark dark:text-white">
-        {day === 4 ? (
+        {currentWeekDay === 4 ? (
           <div className="lg:container py-4 lg:mx-auto">
             <div className="py-2 lg:px-5 lg:px-20 sm:py-2">
               <h1 className="text-4xl sm:text-3xl mx-8 my-3 font-bold">
