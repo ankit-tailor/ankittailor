@@ -39,7 +39,11 @@ function Friday() {
 
   return (
     <Layout>
-      <SEO siteTitle="Friday haiii !!🥳🍻" />
+      <SEO
+        siteTitle={
+          currentWeekDay === 4 ? "Friday haiii !!🥳🍻" : "Waiting for friday !!"
+        }
+      />
       <div className="dark:bg-dark bg-white text-dark dark:text-white">
         {currentWeekDay === 4 ? (
           <div className="lg:container py-4 lg:mx-auto">
