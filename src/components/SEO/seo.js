@@ -32,22 +32,34 @@ const SEO = ({ siteTitle = "" }) => {
     <Helmet>
       <title>{title}</title>
       <link rel="canonical" href={url} />
-      <meta name="description" content={description} />
-      <meta name="image" content={`${url}${image}`} />
+      <meta
+        name="description"
+        content="Frontend Engineer exploring grounds of React and React Native, building NativeBase UI library."
+      />
 
-      <meta property="og:url" content={url} />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${url}${image}`} />
+      <meta property="og:url" content="https://ankits.info" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Ankit Tailor | Frontend Engineer" />
+      <meta
+        property="og:description"
+        content="Frontend Engineer exploring grounds of React and React Native, building NativeBase UI library."
+      />
+      <meta
+        property="og:image"
+        content="https://pbs.twimg.com/profile_images/1462665715903696896/6UU9EkZF.jpg"
+      />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={defaults.twitter} />
-      <meta name="twitter:title" content={defaults.title} />
-      <meta name="twitter:description" content={defaults.twitterDescription} />
+      <meta property="twitter:domain" content="ankits.info" />
+      <meta property="twitter:url" content="https://ankits.info" />
+      <meta name="twitter:title" content="Ankit Tailor | Frontend Engineer" />
+      <meta
+        name="twitter:description"
+        content="Frontend Engineer exploring grounds of React and React Native, building NativeBase UI library."
+      />
       <meta
         name="twitter:image"
-        content={`https://pbs.twimg.com/profile_images/1462665715903696896/6UU9EkZF_400x400.jpg`}
+        content="https://pbs.twimg.com/profile_images/1462665715903696896/6UU9EkZF.jpg"
       />
     </Helmet>
   )
